@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="decore:ejb-client">
+    <output-path>$PROJECT_DIR$/decore/target/decore-1.0-SNAPSHOT-client.jar</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="decore/ejb/EJB" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/decore/target/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="decore" />
+    </root>
+  </artifact>
+</component>

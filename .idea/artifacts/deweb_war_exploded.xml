@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="deweb:war exploded">
+    <output-path>$PROJECT_DIR$/deweb/target/deweb</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="deweb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="decore-1.0-SNAPSHOT-client.jar">
+            <element id="artifact" artifact-name="decore:ejb-client" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/deweb/target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="deweb/web/Web" />
+    </root>
+  </artifact>
+</component>

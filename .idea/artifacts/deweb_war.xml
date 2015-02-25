@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="deweb:war">
+    <output-path>$PROJECT_DIR$/deweb/target</output-path>
+    <root id="archive" name="deweb.war">
+      <element id="artifact" artifact-name="deweb:war exploded" />
+    </root>
+  </artifact>
+</component>

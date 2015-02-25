@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="libreriaEar:ear">
+    <output-path>$PROJECT_DIR$/libreriaEar/target</output-path>
+    <root id="archive" name="libreriaEar-1.0-SNAPSHOT.ear">
+      <element id="artifact" artifact-name="libreriaEar:ear exploded" />
+    </root>
+  </artifact>
+</component>

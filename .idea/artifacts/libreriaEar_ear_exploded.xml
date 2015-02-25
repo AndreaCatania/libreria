@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="libreriaEar:ear exploded">
+    <output-path>$PROJECT_DIR$/libreriaEar/target/libreriaEar-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="libreriaEar/javaeeApplication/JavaEE" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/libreriaEar/target/MANIFEST.MF" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/libreriaEar/src/main/application" />
+      <element id="archive" name="decore-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="decore:ejb exploded" />
+      </element>
+      <element id="archive" name="deweb-1.0-SNAPSHOT.jar">
+        <element id="artifact" artifact-name="deweb:war exploded" />
+      </element>
+      <element id="archive" name="decore-1.0-SNAPSHOT-client.jar">
+        <element id="artifact" artifact-name="decore:ejb-client" />
+      </element>
+    </root>
+  </artifact>
+</component>
