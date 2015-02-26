@@ -1,13 +1,21 @@
 package con.ac.thetest;
 
+import javax.ejb.Local;
 import javax.ejb.Singleton;
 
-/**
- * Created by andrea on 2/26/15.
- */
 @Singleton
-public class SingBean{
-    public String getName(){
-        return "Andrea";
+public class SingBean implements SingIFace{
+    public SingBean(){
+        this( "Andrea" );
     }
+    public SingBean( String name ){
+        setName( name );
+    }
+    public void setName( String name ){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+    private String name;
 }

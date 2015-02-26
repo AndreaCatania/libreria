@@ -3,7 +3,7 @@ package con.ac.thetest;
 import javax.ejb.Remote;
 
 @Remote
-public interface LibraryIFace{
+public interface Library2IFace {
     public String getName();
     public void setName(String text);
     public String getText();

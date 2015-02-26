@@ -2,10 +2,12 @@ package con.ac.thetest;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import javax.ejb.*;
+import javax.ejb.EJB;
+import javax.ejb.Remove;
+import javax.ejb.Stateless;
 
 @Stateless
-public class LibraryBean implements LibraryIFace{
+public class Library2Bean implements Library2IFace{
 
     @EJB
     SingIFace sb;
