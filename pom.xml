@@ -5,12 +5,12 @@
   <artifactId>libreria</artifactId>
   <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>deweb</module>
         <module>decore</module>
+        <module>deweb</module>
         <module>libreriaEar</module>
     </modules>
     <packaging>pom</packaging>
-  <name>libreria</name>
+    <name>libreria</name>
     <dependencies>
         <dependency>
             <groupId>javax</groupId>

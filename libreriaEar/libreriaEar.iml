@@ -19,8 +19,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="decore" />
     <orderEntry type="module" module-name="deweb" />
-    <orderEntry type="module" module-name="decore" />
-    <orderEntry type="library" name="Maven: con.ac.thetest:decore:ejb-client:client:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.5.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.activation:activation:1.1" level="project" />

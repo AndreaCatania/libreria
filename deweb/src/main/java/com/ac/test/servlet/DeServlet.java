@@ -1,6 +1,7 @@
 package com.ac.test.servlet;
 
 import con.ac.thetest.LibraryIFace;
+import con.ac.thetest.SingBean;
 
 import javax.ejb.EJB;
 import javax.servlet.annotation.WebServlet;
@@ -13,14 +14,17 @@ import java.io.Writer;
 @WebServlet(name = "test", urlPatterns = {"/test"})
 public class DeServlet extends HttpServlet{
 
-    @EJB(lookup="java:global/decore-1.0-SNAPSHOT/LibraryBean")
+    @EJB
     LibraryIFace lb;
+    @EJB
+    SingBean sb;
 
     protected void doGet( HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         Writer out = response.getWriter();
+        out.append("Hello "+sb.getName()+"!");
+        out.append("\n");
         out.append( lb.getText() );
-        out.append("Hello test!");
         out.close();
 
     }
