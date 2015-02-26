@@ -29,7 +29,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="decore" target="1.7" />
+      <module name="decore" target="1.8" />
       <module name="libreriaEar" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -13,7 +13,7 @@ import java.io.Writer;
 @WebServlet(name = "test", urlPatterns = {"/test"})
 public class DeServlet extends HttpServlet{
 
-    @EJB
+    @EJB(lookup="java:global/decore-1.0-SNAPSHOT/LibraryBean")
     LibraryIFace lb;
 
     protected void doGet( HttpServletRequest request, HttpServletResponse response) throws IOException {
