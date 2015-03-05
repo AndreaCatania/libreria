@@ -1,4 +1,7 @@
-package con.ac.thetest;
+package com.ac.ejbs;
+
+import com.ac.ejbsclient.ejb.Library2IFace;
+import com.ac.ejbclient.ejb.SingIFace;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -7,7 +10,7 @@ import javax.ejb.Remove;
 import javax.ejb.Stateless;
 
 @Stateless
-public class Library2Bean implements Library2IFace{
+public class Library2Bean implements Library2IFace {
 
     @EJB
     SingIFace sb;
@@ -35,19 +38,19 @@ public class Library2Bean implements Library2IFace{
     @Remove
     public void remove()
     {
-        System.out.println("EJB RIMOSSO");
+        System.out.println("EJB2 RIMOSSO");
     }
 
     @PreDestroy
     public void preDestroy()
     {
-        System.out.println("EJB LIBRARY DESTROYED");
+        System.out.println("EJB LIBRARY2 DESTROYED");
     }
 
     @PostConstruct
     public void postConstruct(){
-        System.out.println("EJB LIBRARY CONSTRUCTED");
-            setText( "#Default text#" );
+        System.out.println("EJB LIBRARY2 CONSTRUCTED");
+        setText( "#Default text#" );
     }
 
     private String text;

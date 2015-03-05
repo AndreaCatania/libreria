@@ -1,4 +1,4 @@
-package con.ac.thetest;
+package com.ac.ejbclient.ejb;
 
 import javax.ejb.Local;
 

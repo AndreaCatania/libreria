@@ -1,10 +1,11 @@
-package con.ac.thetest;
+package com.ac.ejbs;
 
-import javax.ejb.Local;
+import com.ac.ejbclient.ejb.SingIFace;
+
 import javax.ejb.Singleton;
 
 @Singleton
-public class SingBean implements SingIFace{
+public class SingBean implements SingIFace {
     public SingBean(){
         this( "Andrea" );
     }

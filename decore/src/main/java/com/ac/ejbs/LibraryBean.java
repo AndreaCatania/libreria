@@ -1,14 +1,20 @@
-package con.ac.thetest;
+package com.ac.ejbs;
+
+import com.ac.ejbsclient.entities.Libro;
+import com.ac.core.book.BookManager;
+import com.ac.ejbsclient.ejb.LibraryIFace;
+import com.ac.ejbclient.ejb.SingIFace;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.ejb.*;
 
 @Stateless
-public class LibraryBean implements LibraryIFace{
+public class LibraryBean implements LibraryIFace {
 
-    @EJB
-    SingIFace sb;
+    public LibraryBean(){
+        setText( "#Default text#" );
+    }
 
     @Override
     public void setName(String text){
@@ -23,6 +29,19 @@ public class LibraryBean implements LibraryIFace{
     @Override
     public String getText(){
         return text;
+    }
+
+    @Override
+    public void createBook(int bookId, String name){
+        Libro libro = new Libro();
+        libro.setName(name);
+        libro.setBookId(bookId);
+        BookManager.setBook(libro);
+    }
+
+    @Override
+    public Libro getBook( int bookId ){
+        return BookManager.getBook(bookId);
     }
 
     @Override
@@ -45,8 +64,9 @@ public class LibraryBean implements LibraryIFace{
     @PostConstruct
     public void postConstruct(){
         System.out.println("EJB LIBRARY CONSTRUCTED");
-            setText( "#Default text#" );
     }
 
     private String text;
+    @EJB
+    private SingIFace sb;
 }

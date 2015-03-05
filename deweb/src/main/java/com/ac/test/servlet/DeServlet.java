@@ -1,9 +1,7 @@
 package com.ac.test.servlet;
 
-import con.ac.thetest.Library2IFace;
-import con.ac.thetest.LibraryIFace;
+import com.ac.ejbsclient.entities.Libro;
 
-import javax.ejb.EJB;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,24 +12,76 @@ import java.io.Writer;
 @WebServlet(name = "test", urlPatterns = {"/test"})
 public class DeServlet extends HttpServlet{
 
-    @EJB
-    LibraryIFace lb1;
-    @EJB
-    Library2IFace lb2;
-
     protected void doGet( HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        lb1.setName("Filippo"); // nome comune
-        lb1.setText("Testo lb1");
-        lb2.setText( "Testo lb2" );
+        MyObj myObj = new MyObj();
 
         Writer out = response.getWriter();
-        out.append("1. Hello "+lb1.getName()+"!");
-        out.append( "\n1. text:"+lb1.getText() );
+
+        out.append("1. Hello "+myObj.getName()+"!");
+        out.append( "\n1. text:"+myObj.getText() );
         out.append("\n\n----------------\n");
-        out.append("2. Hello "+lb2.getName()+"!");
-        out.append( "\n2. text:"+lb2.getText() );
+        out.append("2. Hello "+myObj.getName2()+"!");
+        out.append( "\n2. text:"+myObj.getText2() );
+
+        out.append( "\n===========================================" );
+
+        myObj.setName("Filippo"); // nome comune
+        myObj.setText("Testo lb1");
+        myObj.setText2("Testo lb2" );
+
+        out.append("\n1. Hello "+myObj.getName()+"!");
+        out.append( "\n1. text:"+myObj.getText() );
+        out.append("\n\n----------------\n");
+        out.append("2. Hello "+myObj.getName2()+"!");
+        out.append( "\n2. text:"+myObj.getText2() );
+
+        out.append( "\n===========================================" );
+
+
+        boolean error = false;
+        int bId = 0;
+        try{
+            bId = Integer.parseInt(request.getParameter("bId"));
+        }catch(Exception e){
+            error = true;
+        }
+        if( !error ){
+            Libro libro = myObj.getBook(bId);
+            if( null!=libro ){
+                out.append( "\nBook name: "+libro.getName());
+                out.append( "\nBook id: "+libro.getBookId());
+            }else{
+                out.append( "\nbId not assigned yet" );
+            }
+        }else{
+            out.append( "\nbId required" );
+        }
+
         out.close();
 
+    }
+
+    protected void doPost( HttpServletRequest request, HttpServletResponse response) throws IOException {
+        MyObj myObj = new MyObj();
+
+        boolean error = false;
+        int bId = 0;
+        String bName = null;
+        try{
+            bId = Integer.parseInt(request.getParameter("bId"));
+            bName = request.getParameter("bName");
+        }catch(Exception e){
+            error = true;
+        }
+        if( !error ){
+            myObj.createBook(bId, bName);
+        }else{
+            Writer out = response.getWriter();
+            out.append( "Error." );
+            out.append( "\nbName required" );
+            out.append( "\nbId required" );
+            out.close();
+        }
     }
 }
