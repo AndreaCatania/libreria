@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="ejb-jar" name="decore:ejb">
     <output-path>$PROJECT_DIR$/decore/target</output-path>
-    <root id="archive" name="decore-1.0-SNAPSHOT.jar">
+    <root id="archive" name="decore.jar">
       <element id="artifact" artifact-name="decore:ejb exploded" />
     </root>
   </artifact>
