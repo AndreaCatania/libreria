@@ -1,6 +1,6 @@
 package com.ac.test.servlet;
 
-import com.ac.ejbsclient.entities.Libro;
+import com.ac.ejbsclient.entities.Book;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -47,7 +47,7 @@ public class DeServlet extends HttpServlet{
             error = true;
         }
         if( !error ){
-            Libro libro = myObj.getBook(bId);
+            Book libro = myObj.getBook(bId);
             if( null!=libro ){
                 out.append( "\nBook name: "+libro.getName());
                 out.append( "\nBook id: "+libro.getBookId());

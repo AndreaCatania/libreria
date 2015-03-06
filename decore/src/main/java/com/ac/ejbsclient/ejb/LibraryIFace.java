@@ -1,7 +1,7 @@
 package com.ac.ejbsclient.ejb;
 
 
-import com.ac.ejbsclient.entities.Libro;
+import com.ac.ejbsclient.entities.Book;
 
 import javax.ejb.Remote;
 
@@ -12,5 +12,5 @@ public interface LibraryIFace{
     public String getText();
     public void setText(String text);
     public void createBook(int bookId, String name);
-    public Libro getBook(int bookId);
+    public Book getBook(int bookId);
 }

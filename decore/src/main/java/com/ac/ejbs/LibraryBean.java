@@ -1,9 +1,10 @@
 package com.ac.ejbs;
 
-import com.ac.ejbsclient.entities.Libro;
+import com.ac.core.Factory;
 import com.ac.core.book.BookManager;
 import com.ac.ejbsclient.ejb.LibraryIFace;
-import com.ac.ejbclient.ejb.SingIFace;
+import com.ac.ejbsclient.ejb.SingIFace;
+import com.ac.ejbsclient.entities.Book;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -33,15 +34,27 @@ public class LibraryBean implements LibraryIFace {
 
     @Override
     public void createBook(int bookId, String name){
-        Libro libro = new Libro();
-        libro.setName(name);
-        libro.setBookId(bookId);
-        BookManager.setBook(libro);
+
     }
 
     @Override
-    public Libro getBook( int bookId ){
-        return BookManager.getBook(bookId);
+    public Book getBook( int bookId ){
+        System.out.println("-------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------");
+        System.out.println("-----------------------            HERE                   ---------------------------");
+        System.out.println("-------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------");
+        /*Factory factory = new Factory();
+        BookManager bookManager = factory.getBookManager();
+        Book hBook = bookManager.getBook( bookId );*/
+        Book book = new Book();
+        /*book.setName(hBook.getName());
+        book.setBookId(hBook.getBookId());*/
+        book.setName("Libro AA");
+        book.setBookId(1);
+        return book;
     }
 
     @Override

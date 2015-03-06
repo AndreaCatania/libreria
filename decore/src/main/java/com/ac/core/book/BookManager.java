@@ -1,19 +1,19 @@
 package com.ac.core.book;
 
-import com.ac.ejbsclient.entities.Libro;
+import com.ac.ejbsclient.entities.Book;
+import org.hibernate.Session;
 
-import java.util.HashMap;
-import java.util.Map;
-
-/**
- * Created by andrea on 3/5/15.
- */
 public class BookManager {
-    public static Libro getBook(int bookId){
-        return BOOKS.get(bookId);
+    public BookManager(Session hibernateSession){
+        this.hibernateSession = hibernateSession;
     }
-    public static void setBook(Libro book){
-        BOOKS.put(book.getBookId(), book);
+
+    public Book getBook(int bookId){
+        return (Book) hibernateSession.get(Book.class, bookId);
     }
-    private static Map<Integer,Libro> BOOKS = new HashMap<>();
+    public void setBook(Book book){
+        hibernateSession.save(book);
+    }
+
+    private Session hibernateSession;
 }

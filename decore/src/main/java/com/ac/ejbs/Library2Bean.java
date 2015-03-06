@@ -1,7 +1,7 @@
 package com.ac.ejbs;
 
 import com.ac.ejbsclient.ejb.Library2IFace;
-import com.ac.ejbclient.ejb.SingIFace;
+import com.ac.ejbsclient.ejb.SingIFace;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

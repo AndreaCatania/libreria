@@ -2,7 +2,7 @@ package com.ac.test.servlet;
 
 import com.ac.ejbsclient.ejb.Library2IFace;
 import com.ac.ejbsclient.ejb.LibraryIFace;
-import com.ac.ejbsclient.entities.Libro;
+import com.ac.ejbsclient.entities.Book;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -54,7 +54,7 @@ public class MyObj{
         lb1.createBook(bookId,name);
     }
 
-    public Libro getBook(int bookId){
+    public Book getBook(int bookId){
         return lb1.getBook(bookId);
     }
 
