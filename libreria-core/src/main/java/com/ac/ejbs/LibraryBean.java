@@ -4,7 +4,7 @@ import com.ac.core.Factory;
 import com.ac.core.book.BookManager;
 import com.ac.ejbsclient.ejb.LibraryIFace;
 import com.ac.ejbsclient.ejb.SingIFace;
-import com.ac.ejbsclient.entities.Book;
+import com.ac.core.entities.Book;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -44,6 +44,7 @@ public class LibraryBean implements LibraryIFace {
         Factory factory = new Factory();
         BookManager bookManager = factory.getBookManager();
         Book hBook = bookManager.getBook( bookId );
+        factory.hibernateSession_commitAndClose();
         return hBook;
     }
 

@@ -2,7 +2,7 @@ package com.ac.test.servlet;
 
 import com.ac.ejbsclient.ejb.Library2IFace;
 import com.ac.ejbsclient.ejb.LibraryIFace;
-import com.ac.ejbsclient.entities.Book;
+import com.ac.core.entities.Book;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;

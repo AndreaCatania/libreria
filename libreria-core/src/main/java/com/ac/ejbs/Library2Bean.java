@@ -12,9 +12,6 @@ import javax.ejb.Stateless;
 @Stateless
 public class Library2Bean implements Library2IFace {
 
-    @EJB
-    SingIFace sb;
-
     @Override
     public void setName(String text){
         sb.setName( text );
@@ -54,4 +51,6 @@ public class Library2Bean implements Library2IFace {
     }
 
     private String text;
+    @EJB
+    private SingIFace sb;
 }

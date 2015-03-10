@@ -1,11 +1,10 @@
 package com.ac.ejbsclient.ejb;
 
+import com.ac.core.entities.Book;
 
-import com.ac.ejbsclient.entities.Book;
+import javax.ejb.Local;
 
-import javax.ejb.Remote;
-
-@Remote
+@Local
 public interface LibraryIFace{
     public String getName();
     public void setName(String name);

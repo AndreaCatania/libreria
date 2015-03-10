@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.ac.ejbsclient.entities.Book" table="books" schema="" catalog="libreria">
+    <class name="com.ac.core.entities.Book" table="books" schema="" catalog="libreria">
         <id name="bookId" column="bookId"/>
         <property name="name" column="name"/>
     </class>

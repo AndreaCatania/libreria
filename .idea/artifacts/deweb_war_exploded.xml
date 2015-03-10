@@ -6,11 +6,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="deweb" />
         </element>
-        <element id="directory" name="lib">
-          <element id="archive" name="libreria-core-client-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="libreria-core-client" />
-          </element>
-        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/deweb/target/MANIFEST.MF" />

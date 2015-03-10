@@ -1,8 +1,8 @@
 package com.ac.ejbsclient.ejb;
 
-import javax.ejb.Remote;
+import javax.ejb.Local;
 
-@Remote
+@Local
 public interface Library2IFace{
     public String getName();
     public void setName(String name);

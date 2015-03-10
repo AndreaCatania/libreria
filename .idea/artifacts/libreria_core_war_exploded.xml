@@ -7,9 +7,6 @@
           <element id="module-output" name="libreria-core" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="libreria-core-client-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="libreria-core-client" />
-          </element>
           <element id="library" level="project" name="Maven: org.jboss.ejb3:jboss-ejb3-ext-api:2.1.0" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.2" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.2" />

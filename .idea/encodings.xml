@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/deweb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libreria-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libreria-core-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core-db-entities" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core-hdb-entities" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libreria-core/src/main/java/com/ac/core/Factory.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libreria-core/src/main/java/com/ac/core/book/BookManager.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libreria-core/src/main/java/com/ac/ejbs/Library2Bean.java" charset="UTF-8" />

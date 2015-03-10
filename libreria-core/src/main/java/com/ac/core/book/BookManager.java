@@ -1,7 +1,9 @@
 package com.ac.core.book;
 
-import com.ac.ejbsclient.entities.Book;
+import com.ac.core.entities.Book;
 import org.hibernate.Session;
+
+
 
 public class BookManager {
     public BookManager(Session hibernateSession){

@@ -7,17 +7,13 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>libreria-core-client</artifactId>
     <packaging>jar</packaging>
-
     <name>libreria-core-client</name>
-
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
@@ -26,7 +22,6 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -68,5 +63,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

@@ -1,6 +1,6 @@
 package com.ac.test.servlet;
 
-import com.ac.ejbsclient.entities.Book;
+import com.ac.core.entities.Book;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -48,6 +48,7 @@ public class DeServlet extends HttpServlet{
         }
         if( !error ){
             Book libro = myObj.getBook(bId);
+            libro.setName("new name setted");
             if( null!=libro ){
                 out.append( "\nbId: " + bId );
                 out.append( "\nBook name: "+libro.getName());

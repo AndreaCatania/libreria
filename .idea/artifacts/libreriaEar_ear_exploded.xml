@@ -7,6 +7,11 @@
         <element id="file-copy" path="$PROJECT_DIR$/libreriaEar/target/MANIFEST.MF" />
       </element>
       <element id="dir-copy" path="$PROJECT_DIR$/libreriaEar/src/main/application" />
+      <element id="directory" name="lib">
+        <element id="archive" name="libreria-core-client-1.0-SNAPSHOT.jar">
+          <element id="artifact" artifact-name="libreria-core-client:ejb exploded" />
+        </element>
+      </element>
       <element id="archive" name="libreria-core-1.0-SNAPSHOT.war">
         <element id="artifact" artifact-name="libreria-core:war exploded" />
       </element>
