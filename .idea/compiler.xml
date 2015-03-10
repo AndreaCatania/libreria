@@ -23,13 +23,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="decore" />
         <module name="deweb" />
+        <module name="libreria-core" />
+        <module name="libreria-core-client" />
         <module name="libreriaEar" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="decore" target="1.8" />
+      <module name="libreria-core" target="1.8" />
+      <module name="libreria-core-client" target="1.8" />
       <module name="libreriaEar" target="1.8" />
     </bytecodeTargetLevel>
   </component>

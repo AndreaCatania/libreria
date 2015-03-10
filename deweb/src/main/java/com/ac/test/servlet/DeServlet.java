@@ -49,6 +49,7 @@ public class DeServlet extends HttpServlet{
         if( !error ){
             Book libro = myObj.getBook(bId);
             if( null!=libro ){
+                out.append( "\nbId: " + bId );
                 out.append( "\nBook name: "+libro.getName());
                 out.append( "\nBook id: "+libro.getBookId());
             }else{

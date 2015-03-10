@@ -17,9 +17,8 @@
     <dependencies>
         <dependency>
             <groupId>con.ac.thetest</groupId>
-            <artifactId>decore</artifactId>
+            <artifactId>libreria-core-client</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <type>ejb-client</type>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

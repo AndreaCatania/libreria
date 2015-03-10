@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="libreria-core-client:ejb">
+    <output-path>$PROJECT_DIR$/libreria-core-client/target</output-path>
+    <root id="archive" name="libreria-core-client.jar">
+      <element id="artifact" artifact-name="libreria-core-client:ejb exploded" />
+    </root>
+  </artifact>
+</component>

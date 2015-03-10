@@ -7,8 +7,8 @@
           <element id="module-output" name="deweb" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="decore-1.0-SNAPSHOT-client.jar">
-            <element id="artifact" artifact-name="decore:ejb-client" />
+          <element id="archive" name="libreria-core-client-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="libreria-core-client" />
           </element>
         </element>
       </element>

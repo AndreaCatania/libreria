@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
-    <file url="file://$PROJECT_DIR$/decore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/deweb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core/src/main/java/com/ac/core/Factory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core/src/main/java/com/ac/core/book/BookManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core/src/main/java/com/ac/ejbs/Library2Bean.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core/src/main/java/com/ac/ejbs/LibraryBean.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core/src/main/java/com/ac/ejbs/SingBean.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core/src/main/resources/com/ac/core/hibernate/entities/Book.hbm.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libreria-core/src/main/resources/hibernate.cfg.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libreriaEar" charset="UTF-8" />
   </component>
 </project>

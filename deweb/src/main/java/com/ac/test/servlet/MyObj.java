@@ -60,6 +60,6 @@ public class MyObj{
 
     private static LibraryIFace lb1;
     private static Library2IFace lb2;
-    private static final String NAME_VERSION_EAR = "libreriaEar-1.0-SNAPSHOT";
-    private static final String NAME_VERSION_EJBMODULE = "decore-1.0-SNAPSHOT";
+    private static final String NAME_VERSION_EAR = "libreriaEar";
+    private static final String NAME_VERSION_EJBMODULE = "libreria-core-1.0-SNAPSHOT";
 }

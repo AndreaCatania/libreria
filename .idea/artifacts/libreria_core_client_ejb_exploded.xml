@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="libreria-core-client:ejb exploded">
+    <output-path>$PROJECT_DIR$/libreria-core-client/target/libreria-core-client</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="libreria-core-client/ejb/EJB" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/libreria-core-client/target/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="libreria-core-client" />
+    </root>
+  </artifact>
+</component>
