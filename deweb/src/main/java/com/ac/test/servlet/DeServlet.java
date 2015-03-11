@@ -48,7 +48,6 @@ public class DeServlet extends HttpServlet{
         }
         if( !error ){
             BookEJB libro = myObj.getBook(bId);
-            libro.setName("new name setted");
             if( null!=libro ){
                 out.append( "\nbId: " + bId );
                 out.append( "\nBook name: "+libro.getName());
