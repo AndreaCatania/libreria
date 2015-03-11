@@ -1,10 +1,12 @@
 package com.ac.ejbs;
 
+import com.ac.core.EntitiesConverter;
 import com.ac.core.Factory;
+import com.ac.core.book.BookEntity;
 import com.ac.core.book.BookManager;
 import com.ac.ejbsclient.ejb.LibraryIFace;
 import com.ac.ejbsclient.ejb.SingIFace;
-import com.ac.core.entities.Book;
+import com.ac.core.entities.BookEJB;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -40,12 +42,12 @@ public class LibraryBean implements LibraryIFace {
     }
 
     @Override
-    public Book getBook( int bookId ){
+    public BookEJB getBook( int bookId ){
         Factory factory = new Factory();
         BookManager bookManager = factory.getBookManager();
-        Book hBook = bookManager.getBook( bookId );
+        BookEntity hBook = bookManager.getBook( bookId );
         factory.hibernateSession_commitAndClose();
-        return hBook;
+        return EntitiesConverter.toEJB(hBook);
     }
 
     @Override

@@ -1,6 +1,5 @@
 package com.ac.core.book;
 
-import com.ac.core.entities.Book;
 import org.hibernate.Session;
 
 
@@ -10,10 +9,10 @@ public class BookManager {
         this.hibernateSession = hibernateSession;
     }
 
-    public Book getBook(int bookId){
-        return (Book) hibernateSession.get(Book.class, bookId);
+    public BookEntity getBook(int bookId){
+        return (BookEntity) hibernateSession.get(BookEntity.class, bookId);
     }
-    public void setBook(Book book){
+    public void setBook(BookEntity book){
         hibernateSession.save(book);
     }
 

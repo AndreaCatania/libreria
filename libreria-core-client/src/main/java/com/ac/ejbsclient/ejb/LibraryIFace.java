@@ -1,6 +1,6 @@
 package com.ac.ejbsclient.ejb;
 
-import com.ac.core.entities.Book;
+import com.ac.core.entities.BookEJB;
 
 import javax.ejb.Local;
 
@@ -11,5 +11,5 @@ public interface LibraryIFace{
     public String getText();
     public void setText(String text);
     public void createBook(int bookId, String name);
-    public Book getBook(int bookId);
+    public BookEJB getBook(int bookId);
 }

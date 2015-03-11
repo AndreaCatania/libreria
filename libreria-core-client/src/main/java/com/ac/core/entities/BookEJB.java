@@ -1,6 +1,7 @@
 package com.ac.core.entities;
 
-public class Book implements java.io.Serializable{
+public class BookEJB implements java.io.Serializable{
+    public BookEJB(){}
     public int getBookId() {
         return bookId;
     }
@@ -17,7 +18,7 @@ public class Book implements java.io.Serializable{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Book books = (Book) o;
+        BookEJB books = (BookEJB) o;
         if (bookId != books.bookId) return false;
         if (name != null ? !name.equals(books.name) : books.name != null) return false;
         return true;
