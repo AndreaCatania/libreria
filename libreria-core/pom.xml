@@ -70,11 +70,19 @@
             <artifactId>hibernate-envers</artifactId>
             <version>4.3.8.Final</version>
         </dependency>
-        <dependency>
+        <!--dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-c3p0</artifactId>
             <version>4.3.8.Final</version>
+        </dependency-->
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-hikaricp</artifactId>
+            <version>4.3.6.Final</version>
+            <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-proxool</artifactId>
